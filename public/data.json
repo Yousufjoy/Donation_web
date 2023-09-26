@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "picture": "https://i.ibb.co/MG14M4y/1.png",
     "title": "Product 1",
     "category": "Electronics",
@@ -10,6 +11,7 @@
     "price": "$199.99"
   },
   {
+    "id": 2,
     "picture": "https://i.ibb.co/c8n2RDx/4.png",
     "title": "Product 2",
     "category": "Clothing",
@@ -20,6 +22,7 @@
     "price": "$49.99"
   },
   {
+    "id": 3,
     "picture": "https://i.ibb.co/swbyJD5/3.png",
     "title": "Product 3",
     "category": "Home Decor",
@@ -30,6 +33,7 @@
     "price": "$79.99"
   },
   {
+    "id": 4,
     "picture": "https://i.ibb.co/TR08Wkj/2.png",
     "title": "Product 4",
     "category": "Books",
@@ -40,6 +44,7 @@
     "price": "$29.99"
   },
   {
+    "id": 5,
     "picture": "https://i.ibb.co/TR08Wkj/2.png",
     "title": "Product 5",
     "category": "Sports",
@@ -50,6 +55,7 @@
     "price": "$69.99"
   },
   {
+    "id": 6,
     "picture": "https://i.ibb.co/swbyJD5/3.png",
     "title": "Product 6",
     "category": "Toys",
@@ -60,6 +66,7 @@
     "price": "$39.99"
   },
   {
+    "id": 7,
     "picture": "https://i.ibb.co/c8n2RDx/4.png",
     "title": "Product 7",
     "category": "Beauty",
@@ -70,6 +77,7 @@
     "price": "$89.99"
   },
   {
+    "id": 8,
     "picture": "https://i.ibb.co/MG14M4y/1.png",
     "title": "Product 8",
     "category": "Furniture",
@@ -80,6 +88,7 @@
     "price": "$159.99"
   },
   {
+    "id": 9,
     "picture": "https://i.ibb.co/MG14M4y/1.png",
     "title": "Product 9",
     "category": "Jewelry",
@@ -90,6 +99,7 @@
     "price": "$199.99"
   },
   {
+    "id": 10,
     "picture": "https://i.ibb.co/c8n2RDx/4.png",
     "title": "Product 10",
     "category": "Food",
@@ -100,6 +110,7 @@
     "price": "$19.99"
   },
   {
+    "id": 11,
     "picture": "https://i.ibb.co/swbyJD5/3.png",
     "title": "Product 11",
     "category": "Health",
@@ -110,6 +121,7 @@
     "price": "$49.99"
   },
   {
+    "id": 12,
     "picture": "https://i.ibb.co/TR08Wkj/2.png",
     "title": "Product 12",
     "category": "Gaming",

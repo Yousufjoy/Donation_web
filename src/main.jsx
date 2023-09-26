@@ -8,6 +8,7 @@ import ErrorPage from "./ErrorPage/ErrorPage.jsx";
 import Home from "./Home/Home.jsx";
 import Donation from "./Donation/Donation.jsx";
 import Statistics from "./Statistics/Statistics.jsx";
+import CarDetails from "./CarDetails/CarDetails";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics></Statistics>,
+      },
+      {
+        path: "/card/:id",
+        loader: () => fetch("../public/data.json"),
+        element: <CarDetails></CarDetails>,
       },
     ],
   },
