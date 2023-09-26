@@ -15,11 +15,21 @@ const Card = ({ data }) => {
   } = data;
   return (
     <Link to={`/card/${id}`}>
-      <div>
-        <div className={`w-[312px] h-[293px] rounded-lg ${card_bg}`}>
-          <img src={picture} alt="" />
-          <p className=" text-xs">{category}</p>
-          <h1 className=" text-xl font-semibold">{title}</h1>
+      <div style={{ backgroundColor: card_bg }}>
+        <div className="w-[312px] h-[293px] rounded-lg">
+          <img className="w-[305px]" src={picture} alt="" />
+          <p
+            style={{ color: category_bg }}
+            className=" text-xs w-[74px] h-[24px] text-center rounded-md border-"
+          >
+            {category}
+          </p>
+          <h1
+            style={{ color: text_button_bg }}
+            className=" text-xl font-semibold"
+          >
+            {title}
+          </h1>
         </div>
       </div>
     </Link>

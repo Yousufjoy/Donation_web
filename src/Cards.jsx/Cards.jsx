@@ -12,7 +12,7 @@ const Cards = () => {
       });
   }, []);
   return (
-    <div className="grid grid-cols-4">
+    <div className="grid grid-cols-4 gap-5 my-[100px]">
       {datas.map((data) => {
         return <Card key={data.id} data={data}></Card>;
       })}
