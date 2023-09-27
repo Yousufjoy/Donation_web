@@ -5,6 +5,7 @@ import DonationCard from "../../DonationCard/DonationCard";
 
 const Donation = () => {
   const datas = useLoaderData();
+  const [dataLength, setDataLength] = useState(4);
 
   const [donated, setDonated] = useState([]);
   // Jei jei data gula store ase seigula dorkar so ekhane outside{localStorage e store kora data} theke jehetu antesi tai useEffect use kortesi!
@@ -19,13 +20,23 @@ const Donation = () => {
   }, []);
 
   return (
-    <div className=" grid grid-cols-2 gap-5 max-w-7xl mx-auto my-8">
-      {donated.map((donation) => {
-        return (
-          <DonationCard key={donation.id} donation={donation}></DonationCard>
-        );
-      })}
-    </div>
+    <>
+      <div className=" grid grid-cols-2 gap-5 max-w-7xl mx-auto my-8">
+        {donated.slice(0, dataLength).map((donation) => {
+          return (
+            <DonationCard key={donation.id} donation={donation}></DonationCard>
+          );
+        })}
+      </div>
+      <div className="text-center">
+        <button
+          className=" w-[110px] h-[48px] rounded-lg text-center text-white bg-[#009444]"
+          onClick={() => setDataLength(donated.length)}
+        >
+          Show All!
+        </button>
+      </div>
+    </>
   );
 };
 
