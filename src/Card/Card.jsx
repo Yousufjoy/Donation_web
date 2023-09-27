@@ -20,13 +20,13 @@ const Card = ({ data }) => {
           <img className="w-[305px]" src={picture} alt="" />
           <p
             style={{ color: category_bg }}
-            className=" text-xs w-[74px] h-[24px] text-center rounded-md border-"
+            className=" text-xs w-[74px] h-[24px] text-center rounded-md mt-3 border-2"
           >
             {category}
           </p>
           <h1
             style={{ color: text_button_bg }}
-            className=" text-xl font-semibold"
+            className=" text-xl font-semibold px-4"
           >
             {title}
           </h1>
