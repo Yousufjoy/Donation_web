@@ -13,6 +13,7 @@ const Card = ({ data }) => {
     description,
     price,
   } = data;
+
   return (
     <Link to={`/card/${id}`}>
       <div style={{ backgroundColor: card_bg }}>
