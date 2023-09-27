@@ -22,7 +22,7 @@ const CarDetails = () => {
       <img className="w-[1300px] h-[700px]" src={data?.picture} alt="" />
       <h2 className="text-4xl font-bold my-5 ">{data?.title}</h2>
       <p className="leading-8">{data?.description}</p>
-      <div className=" lg:w-[1280px] w-full h-[130px] bg-[#0B0B0B80] absolute lg:bottom-[50px] bottom-[-147px]  md:bottom-[208px]">
+      <div className=" lg:w-[1280px] w-full h-[130px] bg-[#0B0B0B80] absolute lg:bottom-[133px] bottom-[-123px]  md:bottom-[208px]">
         <button
           onClick={handleToast}
           className=" w-[179px] h-[57px] bg-[#FF444A] text-white rounded-md my-7 mx-7"

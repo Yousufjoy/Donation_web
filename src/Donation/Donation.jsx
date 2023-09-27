@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredDonation } from "../utility/localstorage";
 import DonationCard from "../../DonationCard/DonationCard";
-import Statistics from "../Statistics/Statistics";
 
 const Donation = () => {
   const datas = useLoaderData();
@@ -22,7 +21,7 @@ const Donation = () => {
 
   return (
     <>
-      <div className=" grid lg:grid-cols-2 gap-5 grid-cols-1 max-w-7xl mx-auto my-8">
+      <div className=" grid grid-cols-2 gap-5 max-w-7xl mx-auto my-8">
         {donated.slice(0, dataLength).map((donation) => {
           return (
             <DonationCard key={donation.id} donation={donation}></DonationCard>
@@ -30,7 +29,7 @@ const Donation = () => {
         })}
       </div>
 
-      <div className="text-center">
+      <div className={donated.length < 4 ? "hidden" : " text-center"}>
         <button
           className=" w-[110px] h-[48px] rounded-lg text-center text-white bg-[#009444]"
           onClick={() => setDataLength(donated.length)}
